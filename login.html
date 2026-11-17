@@ -1,0 +1,2 @@
+{% extends "base.html" %}{% block content %}<section class="login card"><div class="eyebrow">ACCESO PRIVADO</div><h1>Bienvenido a <span>CLIP PREMIUM</span></h1><p>Inicia sesión para abrir tu estudio de clips.</p>
+<form method="post"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><label>Usuario</label><input name="username" autocomplete="username" required><label>Contraseña</label><input type="password" name="password" autocomplete="current-password" required><button class="primary full">ENTRAR AL PANEL</button></form></section>{% endblock %}
